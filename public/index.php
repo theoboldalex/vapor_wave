@@ -25,7 +25,8 @@ $dotenv->load();
             .bg-img {
                 background-image: url('head_bg.jpg');
                 background-size: cover;
-                background-position: center center; 
+                background-position: center center;
+                opacity: 0.3;
             }
             
             .gradient-container {
