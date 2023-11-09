@@ -13,7 +13,7 @@ $dotenv->load();
     <head>
         <title>ｖａｐｏｒ░ｄｒｅａｍ</title>
         <style>
-            body, .banner {
+            body {
               margin: 0;
               height: 100vh;
               display: flex;
@@ -24,6 +24,8 @@ $dotenv->load();
 
             .banner {
                 z-index: 100;
+                display: grid;
+                place-items: center;
             }
 
             .bg-img {
