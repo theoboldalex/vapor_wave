@@ -13,7 +13,7 @@ $dotenv->load();
     <head>
         <title>ｖａｐｏｒ░ｄｒｅａｍ</title>
         <style>
-            body {
+            body .banner {
               margin: 0;
               height: 100vh;
               display: flex;
