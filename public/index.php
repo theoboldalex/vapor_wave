@@ -53,7 +53,7 @@ $dotenv->load();
     <body>
         <div class="gradient-container">
             <div class="bg-img">
-                <p class="banner">ａｅｓｔｈｅｔｉｘ １９８７ トろク</p>
+                <p class="banner" style="font-size: 3rem;">ａｅｓｔｈｅｔｉｘ １９８７ トろク</p>
             </div>
         </div>
     </body>
