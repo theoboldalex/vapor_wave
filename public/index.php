@@ -30,13 +30,13 @@ $dotenv->load();
                 background-position: center center; 
             }
             
-            .gradient-container {
+/*             .gradient-container {
               width: 100%;
               height: 100%;
               background: linear-gradient(to right, rgba(255, 0, 255, 0.5), rgba(0, 255, 0, 0.5));
               background-size: 200% 100%;
               animation: gradientAnimation 5s linear infinite;
-            }
+            } */
             
             @keyframes gradientAnimation {
               0% {
