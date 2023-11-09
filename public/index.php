@@ -45,7 +45,7 @@ $dotenv->load();
     </head>
     <body>
         <div class="gradient-container">
-            <p>ａｅｓｔｈｅｔｉｘ　トろク</p>
+            <p class="banner">ａｅｓｔｈｅｔｉｘ　トろク</p>
         </div>
     </body>
 </html>
