@@ -13,19 +13,13 @@ $dotenv->load();
     <head>
         <title>ｖａｐｏｒ░ｄｒｅａｍ</title>
         <style>
-            body {
+            body, .banner {
               margin: 0;
               height: 100vh;
               display: flex;
               align-items: center;
               justify-content: center;
               overflow: hidden;
-            }
-
-            .banner {
-                z-index: 100;
-                display: grid;
-                place-items: center;
             }
 
             .bg-img {
