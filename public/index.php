@@ -27,6 +27,8 @@ $dotenv->load();
                 background-size: cover;
                 background-position: center center;
                 opacity: 0.3;
+                width: 100%;
+                height: 100%;
             }
             
             .gradient-container {
