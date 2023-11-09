@@ -1,0 +1,42 @@
+version: '3'
+
+services:
+  web:
+    build:
+      dockerfile: docker/web/Dockerfile
+      context: .
+    expose:
+      - "443"
+    volumes:
+      - ./:/var/www/project
+    environment:
+      VIRTUAL_HOST: ${HOST},www.${HOST}
+      VIRTUAL_PORT: 443
+      LETSENCRYPT_HOST: ${HOST},www.${HOST}
+    depends_on:
+      - php
+    networks:
+      - internal
+      - nginx-proxy
+  php:
+    build:
+      dockerfile: docker/php/Dockerfile
+      context: .
+      args:
+        - NEWRELIC_LICENSE_KEY=${NEWRELIC_LICENSE_KEY}
+        - COMPOSE_PROJECT_NAME=${COMPOSE_PROJECT_NAME}
+        - NEWRELIC_DAEMON_ADDRESS=newrelic-daemon:31339
+    volumes:
+      - ./:/var/www/project
+    networks:
+      - internal
+      - newrelic
+
+networks:
+  internal:
+  nginx-proxy:
+    external:
+      name: nginx-proxy
+  newrelic:
+    external:
+      name: newrelic
