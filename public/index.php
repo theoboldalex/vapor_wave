@@ -21,6 +21,12 @@ $dotenv->load();
               justify-content: center;
               overflow: hidden;
             }
+
+            .bg-img {
+                background-image: url('head_bg.jpg');
+                background-size: cover;
+                background-position: center center; 
+            }
             
             .gradient-container {
               width: 100%;
