@@ -22,13 +22,15 @@ $dotenv->load();
               overflow: hidden;
             }
 
+            .banner {
+                z-index: 100;
+            }
+
             .bg-img {
                 background-image: url('head_bg.jpg');
                 background-size: cover;
                 background-position: center center;
-                opacity: 0.3;
-                width: 100%;
-                height: 100%;
+                opacity: 0.2;
             }
             
             .gradient-container {
@@ -54,8 +56,9 @@ $dotenv->load();
     </head>
     <body>
         <div class="gradient-container">
-            <p class="banner">ａｅｓｔｈｅｔｉｘ １９８７ トろク</p>
-            <div class="bg-img"></div>
+            <div class="bg-img">
+                <p class="banner">ａｅｓｔｈｅｔｉｘ １９８７ トろク</p>
+            </div>
         </div>
     </body>
 </html>
