@@ -23,6 +23,8 @@ $dotenv->load();
             }
 
             .bg-img {
+                width: 100%;
+                height: 100%;
                 background-image: url('head_bg.jpg');
                 background-size: cover;
                 background-position: center center; 
@@ -50,8 +52,10 @@ $dotenv->load();
         </style>
     </head>
     <body>
-        <div class="gradient-container bg-img">
-            <p class="banner">ａｅｓｔｈｅｔｉｘ １９８７ トろク</p>
+        <div class="gradient-container">
+            <div class="bg-img">
+                <p class="banner">ａｅｓｔｈｅｔｉｘ １９８７ トろク</p>
+            </div>
         </div>
     </body>
 </html>
